@@ -1,0 +1,161 @@
+.wrap {
+    width: 300px;
+    height: 300px;
+    background-color: #eaedac;
+    position: relative;
+    .firstChid , .thirdChid{
+        width: 100px;
+        height: 100px;
+        background: pink;
+        white-space: normal;
+        word-break: break-all;
+        word-wrap: break-word;
+    }
+    .secondChid {
+        width: 100px;
+        height: 100px;
+        background: url('./img/22677048.jpg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        white-space: normal;
+        word-break: break-all;
+        word-wrap: break-word;
+    }
+    .thirdChid {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+
+
+// //垂直水平居中方法一：此方法不需要固定子元素的宽高 需要考虑transform兼容性
+// .wrap {
+//     width: 300px;
+//     height: 300px;
+//     background-color: #eaedac;
+//     position: relative;
+//     .firstChid {
+//         width: 100px;
+//         height: 100px;
+//         background: pink;
+//         white-space: normal;
+//         word-break: break-all;
+//         word-wrap: break-word;
+//         position: absolute;
+//         top: 50%;
+//         left: 50%;
+//         transform: translate(-50%, -50%)
+//     }
+// }
+
+// //垂直水平居中方法二：此方法需要固定子元素的宽高 
+// .wrap {
+//     width: 300px;
+//     height: 300px;
+//     background-color: #eaedac;
+//     position: relative;
+//     .firstChid {
+//         width: 100px;
+//         height: 100px;
+//         background: pink;
+//         white-space: normal;
+//         word-break: break-all;
+//         word-wrap: break-word;
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         right: 0;
+//         bottom: 0;
+//         margin: auto;
+//     }
+// }
+
+// //垂直水平居中方法三：此方法需要固定子元素的宽高 
+// .wrap {
+//     width: 300px;
+//     height: 300px;
+//     background-color: #eaedac;
+//     position: relative;
+//     .firstChid {
+//         width: 100px;
+//         height: 100px;
+//         background: pink;
+//         white-space: normal;
+//         word-break: break-all;
+//         word-wrap: break-word;
+//         position: absolute;
+//         top: 50%;
+//         left: 50%;
+//         margin-top: -50px;
+//         margin-left: -50px;
+//     }
+// }
+
+// //垂直水平居中方法四：此方法需要固定子元素的宽高 
+// .wrap {
+//     width: 300px;
+//     height: 300px;
+//     background-color: #eaedac;
+//     position: relative;
+//     .firstChid {
+//         width: 100px;
+//         height: 100px;
+//         background: pink;
+//         white-space: normal;
+//         word-break: break-all;
+//         word-wrap: break-word;
+//         position: absolute;
+//         top: calc(50% -50px);
+//         left: calc(50% - 50px);
+//     }
+// }
+
+// //垂直水平居中方法五：table布局 table单元格中内容默认就是垂直居中的 只需水平方向text-align:center
+
+
+
+// //垂直水平居中方法六：
+// .wrap {
+//     width: 300px;
+//     height: 300px;
+//     background-color: #eaedac;
+//     display: table-cell;
+//     text-align: center;
+//     vertical-align: middle;
+//     .firstChid {
+//         width: 100px;
+//         height: 100px;
+//         background: pink;
+//         white-space: normal;
+//         word-break: break-all;
+//         word-wrap: break-word;
+//         display: inline-block;
+//     }
+// }
+
+
+// //垂直水平居中方法七：
+// .wrap {
+//     width: 300px;
+//     height: 300px;
+//     background-color: #eaedac;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     .firstChid {
+//         width: 100px;
+//         height: 100px;
+//         background: pink;
+//         white-space: normal;
+//         word-break: break-all;
+//         word-wrap: break-word;
+//     }
+// }
